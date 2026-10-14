@@ -15,7 +15,7 @@ const nextConfig: NextConfig = {
     agentFeedback: true,
   },
   cacheComponents: true,
-  partialPrefetching: true,
+  // partialPrefetching: true,
   reactCompiler: true,
   turbopack: {
     rules: {
