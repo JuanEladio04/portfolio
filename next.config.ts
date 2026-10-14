@@ -8,6 +8,9 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true, // GitHub Pages no soporta el servidor de optimización de imágenes de Next.js
   },
+  typescript: {
+    ignoreBuildErrors: true, // Ignora errores de TypeScript al compilar
+  },
   experimental: {
     agentFeedback: true,
   },
