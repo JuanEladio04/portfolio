@@ -1,0 +1,32 @@
+name: portfolio-dev
+
+services:
+  portfolio-nextjs-app:
+    build: .
+    tty: true
+    stdin_open: true
+    container_name: Portfolio
+    working_dir: /app
+    volumes:
+      - ../../:/app
+      - /app/node_modules
+      - /app/.next
+      - /app/.next-internal
+      - pnpm-store:/root/.local/share/pnpm/store
+    ports:
+      - "3000:3000"
+    env_file:
+      - ../../.env
+    environment:
+      - NODE_ENV=development
+      - NEXT_TELEMETRY_DISABLED=1
+      - WATCHPACK_POLLING=true
+    command: sh -c "pnpm install --ignore-scripts && exec pnpm next dev --webpack"
+    restart: unless-stopped
+
+volumes:
+  pnpm-store:
+
+networks:
+  default:
+    name: portfolio-dev-network
