@@ -24,4 +24,4 @@ const nextConfig: NextConfig = {
   },
 };
 
-export default nextConfig;ahora 
+export default nextConfig;
