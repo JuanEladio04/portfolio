@@ -1,21 +1,13 @@
-import Image from "next/image";
 import { profile, sections } from "@/data/portfolio";
 import { ButtonLink } from "@/components/ui/Button";
 import { Icon } from "@/components/ui/Icon";
-import heroOrbit from "@/assets/images/hero-orbit.webp";
+import { OrbitFrame } from "@/components/ui/OrbitFrame";
 
 export function Hero() {
   return (
     <section className="relative overflow-hidden bg-sand">
-      <Image
-        src={heroOrbit}
-        alt=""
-        priority
-        className="pointer-events-none absolute top-1.5 left-1/2 hidden size-[760px] opacity-60 lg:block"
-      />
-
       <div className="container-page relative flex min-h-[760px] items-center justify-between gap-12 py-20">
-        <div className="flex max-w-[700px] flex-col gap-9">
+        <div className="relative z-10 flex max-w-[700px] flex-col gap-9">
           <p className="flex items-center gap-3.5 text-xs font-semibold tracking-[3px] text-gold uppercase">
             <span className="h-[1.5px] w-12 bg-gold" aria-hidden="true" />
             Portfolio · {profile.location}
@@ -64,9 +56,13 @@ export function Hero() {
 function PhotoComposition() {
   return (
     <div className="relative hidden h-[600px] w-[500px] shrink-0 lg:block">
+      <OrbitFrame
+        speed={0.6}
+        className="pointer-events-none absolute -top-20 -left-[130px] size-[760px] opacity-60"
+      />
       <div className="absolute top-0 left-14 h-[540px] w-[440px] ring-[1.5px] ring-inset ring-gold" />
       {/* TODO: sustituir el placeholder por la foto con next/image */}
-      <div className="absolute top-9 left-5 flex h-[540px] w-[440px] flex-col items-center justify-center gap-2.5 bg-line">
+      <div className="absolute top-9 left-5 flex h-[540px] w-[440px] flex-col items-center justify-center gap-2.5 bg-line motion-safe:animate-bob">
         <Icon name="user-round" size={56} strokeWidth={1.5} className="text-muted" />
         <span className="text-[13px] tracking-[1px] text-muted">Tu foto aquí</span>
       </div>

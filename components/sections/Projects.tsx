@@ -14,9 +14,9 @@ export function Projects() {
         </div>
 
         <ul className="grid grid-cols-[repeat(auto-fill,minmax(240px,1fr))] gap-x-8 gap-y-[72px] justify-items-center sm:justify-items-start xl:grid-cols-4 xl:justify-between">
-          {projects.map((project) => (
+          {projects.map((project, i) => (
             <li key={project.name}>
-              <ProjectCard project={project} />
+              <ProjectCard project={project} phase={i * 0.9} />
             </li>
           ))}
         </ul>

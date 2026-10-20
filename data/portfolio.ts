@@ -12,7 +12,6 @@ export type NavItem = { id: string; label: string };
 export type Project = {
   name: string;
   tags: string[];
-  frame: string;
   logo: {
     src: string;
     width: number;
@@ -86,7 +85,6 @@ export const projects: Project[] = content.projects.map((project) => {
 
   return {
     ...project,
-    frame: publicImage(project.frame, `${where}.frame`),
     logo: {
       ...project.logo,
       src: publicImage(project.logo.src, `${where}.logo.src`),

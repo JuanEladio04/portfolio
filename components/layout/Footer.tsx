@@ -1,6 +1,5 @@
-import Image from "next/image";
 import { profile } from "@/data/portfolio";
-import geoMark from "@/assets/images/geo-mark.webp";
+import { OrbitFrame } from "@/components/ui/OrbitFrame";
 
 export function Footer() {
   return (
@@ -8,7 +7,7 @@ export function Footer() {
       <p>
         © {new Date().getFullYear()} {profile.fullName}
       </p>
-      <Image src={geoMark} alt="" width={40} height={40} />
+      <OrbitFrame className="size-10" />
       <p>
         {profile.location} — {profile.country}
       </p>
