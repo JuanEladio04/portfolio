@@ -68,6 +68,10 @@ const paths = {
 
 export type IconName = keyof typeof paths;
 
+export function isIconName(name: string): name is IconName {
+  return name in paths;
+}
+
 type IconProps = SVGProps<SVGSVGElement> & {
   name: IconName;
   size?: number;
