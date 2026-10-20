@@ -8,92 +8,465 @@
     "location": "Pedrera, Sevilla",
     "country": "España",
     "since": 2022,
-    "cvUrl": "#",
+    "cvUrl": "https://drive.google.com/file/d/15sq__SCY2ke7L5dCRd_LXSM3EMXt5Gfc/view?usp=drivesdk",
     "intro": "Desarrollador Fullstack especializado en backend PHP/Laravel y arquitecturas cloud. Construyo soluciones escalables de principio a fin: de React y Next.js a infraestructura en GCP con Docker."
   },
-
   "about": {
     "quote": "¿Desarrollador? ¿DevOps? ¿Técnico? Al final, las etiquetas son lo de menos. Lo que me define es la curiosidad por entender cómo funciona el mundo bit a bit.",
     "quoteTail": "Construyo tecnología porque es el único lugar donde la lógica y la creatividad hablan el mismo idioma.",
     "description": "Desarrollador Fullstack con especialización en backend PHP/Laravel y experiencia en arquitecturas cloud, automatización e integraciones API. Cuento con proyectos propios SaaS en producción desarrollados junto a mi socio en Nebula Systems.",
     "facts": [
-      { "label": "Ubicación", "value": "Pedrera, Sevilla" },
-      { "label": "Actualmente", "value": "Co-Founder · Nebula Systems" },
-      { "label": "Enfoque", "value": "Backend & Cloud" }
+      {
+        "label": "Ubicación",
+        "value": "Pedrera, Sevilla"
+      },
+      {
+        "label": "Actualmente",
+        "value": "Co-Founder · Nebula Systems"
+      },
+      {
+        "label": "Enfoque",
+        "value": "Backend & Cloud"
+      }
     ],
-    "stack": [
-      "PHP",
-      "Laravel",
-      "Node.js",
-      "NestJS",
-      "Express.js",
-      "TypeScript",
-      "React",
-      "Next.js",
-      "Angular",
-      "SQL",
-      "Docker",
-      "GCP",
-      "n8n"
-    ]
+    "stack": ["PHP", "Laravel", "Node.js", "NestJS", "Express.js", "TypeScript", "React", "Next.js", "Angular", "SQL", "Docker", "GCP", "n8n"]
   },
-
   "projectsIntro": "Desde proyectos académicos hasta plataformas SaaS en producción. Selecciona uno para ver el detalle.",
   "projects": [
     {
+      "slug": "csi-restaurant",
       "name": "CSI Restaurant",
       "tags": ["Reservas", "Carta online"],
-      "logo": { "src": "/images/projects/csi-restaurant-logo.png", "width": 100, "height": 94 }
+      "type": "",
+      "description": "",
+      "stack": [],
+      "url": "",
+      "logo": {
+        "src": "/images/projects/csi-restaurant/logo.webp",
+        "width": 100,
+        "height": 94
+      },
+      "gallery": [
+        {
+          "src": "/images/projects/csi-restaurant/index.webp",
+          "title": "Index",
+          "caption": ""
+        },
+        {
+          "src": "/images/projects/csi-restaurant/card.webp",
+          "title": "Card",
+          "caption": ""
+        },
+        {
+          "src": "/images/projects/csi-restaurant/pizzaoid.webp",
+          "title": "Pizzaoid",
+          "caption": ""
+        },
+        {
+          "src": "/images/projects/csi-restaurant/profile.webp",
+          "title": "Profile",
+          "caption": ""
+        },
+        {
+          "src": "/images/projects/csi-restaurant/reservations.webp",
+          "title": "Reservations",
+          "caption": ""
+        }
+      ]
     },
     {
+      "slug": "plannerly",
       "name": "Plannerly",
       "tags": ["Tareas", "Notas", "Workspaces"],
-      "logo": { "src": "/images/projects/plannerly-logo.png", "width": 96, "height": 108 }
+      "type": "",
+      "description": "",
+      "stack": [],
+      "url": "",
+      "logo": {
+        "src": "/images/projects/plannerly/logo.webp",
+        "width": 96,
+        "height": 108
+      },
+      "gallery": [
+        {
+          "src": "/images/projects/plannerly/notes-manager.webp",
+          "title": "Notes manager",
+          "caption": ""
+        },
+        {
+          "src": "/images/projects/plannerly/reminders-manager.webp",
+          "title": "Reminders manager",
+          "caption": ""
+        },
+        {
+          "src": "/images/projects/plannerly/share-workspace.webp",
+          "title": "Share workspace",
+          "caption": ""
+        },
+        {
+          "src": "/images/projects/plannerly/task-manager.webp",
+          "title": "Task manager",
+          "caption": ""
+        },
+        {
+          "src": "/images/projects/plannerly/workspace-creation.webp",
+          "title": "Workspace creation",
+          "caption": ""
+        }
+      ]
     },
     {
+      "slug": "atlas-music-festival",
       "name": "Atlas Music Festival",
       "tags": ["Entradas", "Artistas"],
+      "type": "",
+      "description": "",
+      "stack": [],
+      "url": "",
       "logo": {
-        "src": "/images/projects/atlas-music-festival-logo.png",
+        "src": "/images/projects/atlas-music-festival/logo.webp",
         "width": 128,
         "height": 128,
         "fit": "cover",
         "tone": "dark"
-      }
+      },
+      "gallery": [
+        {
+          "src": "/images/projects/atlas-music-festival/index.webp",
+          "title": "Index",
+          "caption": ""
+        },
+        {
+          "src": "/images/projects/atlas-music-festival/admin_user-gestion.webp",
+          "title": "Admin · user gestion",
+          "caption": ""
+        },
+        {
+          "src": "/images/projects/atlas-music-festival/buy-pass.webp",
+          "title": "Buy pass",
+          "caption": ""
+        },
+        {
+          "src": "/images/projects/atlas-music-festival/singer-profile_posts.webp",
+          "title": "Singer profile · posts",
+          "caption": ""
+        },
+        {
+          "src": "/images/projects/atlas-music-festival/singer-profile_songs.webp",
+          "title": "Singer profile · songs",
+          "caption": ""
+        },
+        {
+          "src": "/images/projects/atlas-music-festival/singer_post-creation.webp",
+          "title": "Singer · post creation",
+          "caption": ""
+        },
+        {
+          "src": "/images/projects/atlas-music-festival/singer_song-creation.webp",
+          "title": "Singer · song creation",
+          "caption": ""
+        },
+        {
+          "src": "/images/projects/atlas-music-festival/singers.webp",
+          "title": "Singers",
+          "caption": ""
+        }
+      ]
     },
     {
+      "slug": "serv-o",
       "name": "Serv-O",
       "tags": ["Gestión de servidores"],
-      "logo": { "src": "/images/projects/serv-o-logo.png", "width": 92, "height": 72 }
+      "type": "",
+      "description": "",
+      "stack": [],
+      "url": "",
+      "logo": {
+        "src": "/images/projects/serv-o/logo.webp",
+        "width": 92,
+        "height": 72
+      },
+      "gallery": [
+        {
+          "src": "/images/projects/serv-o/index.webp",
+          "title": "Index",
+          "caption": ""
+        },
+        {
+          "src": "/images/projects/serv-o/login.webp",
+          "title": "Login",
+          "caption": ""
+        },
+        {
+          "src": "/images/projects/serv-o/profile.webp",
+          "title": "Profile",
+          "caption": ""
+        },
+        {
+          "src": "/images/projects/serv-o/server_commands.webp",
+          "title": "Server · commands",
+          "caption": ""
+        },
+        {
+          "src": "/images/projects/serv-o/server_resources.webp",
+          "title": "Server · resources",
+          "caption": ""
+        },
+        {
+          "src": "/images/projects/serv-o/services-commands.webp",
+          "title": "Services commands",
+          "caption": ""
+        },
+        {
+          "src": "/images/projects/serv-o/services-gestion.webp",
+          "title": "Services gestion",
+          "caption": ""
+        },
+        {
+          "src": "/images/projects/serv-o/user-gestion.webp",
+          "title": "User gestion",
+          "caption": ""
+        },
+        {
+          "src": "/images/projects/serv-o/workspace.webp",
+          "title": "Workspace",
+          "caption": ""
+        },
+        {
+          "src": "/images/projects/serv-o/workspace-creation.webp",
+          "title": "Workspace creation",
+          "caption": ""
+        }
+      ]
     },
     {
+      "slug": "nebula",
       "name": "Nebula",
       "tags": ["Clientes", "Pedidos", "Portfolio"],
-      "logo": { "src": "/images/projects/nebula-logo.png", "width": 100, "height": 62, "tone": "dark" }
+      "type": "",
+      "description": "",
+      "stack": [],
+      "url": "",
+      "logo": {
+        "src": "/images/projects/nebula/logo.webp",
+        "width": 100,
+        "height": 62,
+        "tone": "dark"
+      },
+      "gallery": [
+        {
+          "src": "/images/projects/nebula/public_index.webp",
+          "title": "Public · index",
+          "caption": ""
+        },
+        {
+          "src": "/images/projects/nebula/clients_contact.webp",
+          "title": "Clients · contact",
+          "caption": ""
+        },
+        {
+          "src": "/images/projects/nebula/clients_orders.webp",
+          "title": "Clients · orders",
+          "caption": ""
+        },
+        {
+          "src": "/images/projects/nebula/clients_projects.webp",
+          "title": "Clients · projects",
+          "caption": ""
+        },
+        {
+          "src": "/images/projects/nebula/public_portfolio.webp",
+          "title": "Public · portfolio",
+          "caption": ""
+        },
+        {
+          "src": "/images/projects/nebula/public_sales-funnel.webp",
+          "title": "Public · sales funnel",
+          "caption": ""
+        },
+        {
+          "src": "/images/projects/nebula/server_availability-gestion.webp",
+          "title": "Server · availability gestion",
+          "caption": ""
+        },
+        {
+          "src": "/images/projects/nebula/server_channels-gestion.webp",
+          "title": "Server · channels gestion",
+          "caption": ""
+        },
+        {
+          "src": "/images/projects/nebula/server_diagrams-integration.webp",
+          "title": "Server · diagrams integration",
+          "caption": ""
+        },
+        {
+          "src": "/images/projects/nebula/server_home.webp",
+          "title": "Server · home",
+          "caption": ""
+        },
+        {
+          "src": "/images/projects/nebula/server_order-gestion.webp",
+          "title": "Server · order gestion",
+          "caption": ""
+        },
+        {
+          "src": "/images/projects/nebula/server_portfolio-gestion.webp",
+          "title": "Server · portfolio gestion",
+          "caption": ""
+        },
+        {
+          "src": "/images/projects/nebula/server_projects-gestion.webp",
+          "title": "Server · projects gestion",
+          "caption": ""
+        },
+        {
+          "src": "/images/projects/nebula/server_promo-gestion.webp",
+          "title": "Server · promo gestion",
+          "caption": ""
+        }
+      ]
     },
     {
+      "slug": "orbity",
       "name": "Orbity",
       "tags": ["SaaS", "PDFs", "Correo temporal"],
+      "type": "SaaS en producción",
+      "description": "Plataforma SaaS multifunción que reúne herramientas web centradas en la privacidad: gestión de PDFs, correos temporales y utilidades online. Sin cuentas y sin rastreo. Construida con una arquitectura de microservicios en Next.js, React y Express.js, desplegada con Docker sobre GCP.",
+      "stack": ["Next.js", "React", "Express.js", "Docker", "GCP"],
+      "url": "",
       "logo": {
-        "src": "/images/projects/orbity-logo.png",
+        "src": "/images/projects/orbity/logo.webp",
         "width": 128,
         "height": 128,
         "fit": "cover",
         "tone": "dark"
-      }
+      },
+      "gallery": [
+        {
+          "src": "/images/projects/orbity/landing_index.webp",
+          "title": "Landing · Inicio",
+          "caption": "Presentación de la suite: herramientas web centradas en la privacidad, sin cuentas ni rastreo."
+        },
+        {
+          "src": "/images/projects/orbity/landing_blog.webp",
+          "title": "Landing · Blog",
+          "caption": ""
+        },
+        {
+          "src": "/images/projects/orbity/mail_dashboard.webp",
+          "title": "Orbity Mail · Panel",
+          "caption": ""
+        },
+        {
+          "src": "/images/projects/orbity/pdf_menu.webp",
+          "title": "Orbity PDF · Menú",
+          "caption": ""
+        },
+        {
+          "src": "/images/projects/orbity/pdf_html-2-pdf.webp",
+          "title": "Orbity PDF · HTML a PDF",
+          "caption": ""
+        },
+        {
+          "src": "/images/projects/orbity/pdf_sing-pdf.webp",
+          "title": "Orbity PDF · Firmar PDF",
+          "caption": ""
+        }
+      ]
     },
     {
+      "slug": "verios",
       "name": "Verios",
       "tags": ["Landing", "Web"],
-      "logo": { "src": "/images/projects/verios-logo.png", "width": 108, "height": 108 }
+      "type": "",
+      "description": "",
+      "stack": [],
+      "url": "",
+      "logo": {
+        "src": "/images/projects/verios/logo.webp",
+        "width": 108,
+        "height": 108
+      },
+      "gallery": [
+        {
+          "src": "/images/projects/verios/landing_index.webp",
+          "title": "Landing · index",
+          "caption": ""
+        }
+      ]
     },
     {
+      "slug": "forvia",
       "name": "Forvia",
       "tags": ["Fitness", "Nutrición", "Social"],
-      "logo": { "src": "/images/projects/forvia-logo.png", "width": 104, "height": 100 }
+      "type": "",
+      "description": "",
+      "stack": [],
+      "url": "",
+      "logo": {
+        "src": "/images/projects/forvia/logo.webp",
+        "width": 104,
+        "height": 100
+      },
+      "gallery": [
+        {
+          "src": "/images/projects/forvia/dashboard.webp",
+          "title": "Dashboard",
+          "caption": ""
+        },
+        {
+          "src": "/images/projects/forvia/landing_index.webp",
+          "title": "Landing · index",
+          "caption": ""
+        },
+        {
+          "src": "/images/projects/forvia/coach-selector.webp",
+          "title": "Coach selector",
+          "caption": ""
+        },
+        {
+          "src": "/images/projects/forvia/nutrition-control.webp",
+          "title": "Nutrition control",
+          "caption": ""
+        },
+        {
+          "src": "/images/projects/forvia/nutrition-goals.webp",
+          "title": "Nutrition goals",
+          "caption": ""
+        },
+        {
+          "src": "/images/projects/forvia/progress-panel.webp",
+          "title": "Progress panel",
+          "caption": ""
+        },
+        {
+          "src": "/images/projects/forvia/rest-minigames.webp",
+          "title": "Rest minigames",
+          "caption": ""
+        },
+        {
+          "src": "/images/projects/forvia/settings.webp",
+          "title": "Settings",
+          "caption": ""
+        },
+        {
+          "src": "/images/projects/forvia/social-feed.webp",
+          "title": "Social feed",
+          "caption": ""
+        },
+        {
+          "src": "/images/projects/forvia/workout-menu.webp",
+          "title": "Workout menu",
+          "caption": ""
+        },
+        {
+          "src": "/images/projects/forvia/workout-training.webp",
+          "title": "Workout training",
+          "caption": ""
+        }
+      ]
     }
   ],
-
   "experienceIntro": "Del soporte técnico y las redes al desarrollo fullstack y la infraestructura cloud.",
   "experience": [
     {
@@ -116,7 +489,6 @@
       "description": "Diagnóstico y reparación de equipos, instalación de sistemas, diseño y cableado de redes y administración de servidores."
     }
   ],
-
   "degrees": [
     {
       "title": "CFGS Desarrollo de Aplicaciones Web",
@@ -131,19 +503,33 @@
       "grade": "8,00"
     }
   ],
-
   "courses": [
     {
       "title": "Programación y Algoritmos en Python para IA (130 h)",
       "issuer": "Samsung Innovation Campus · EOI",
       "date": "Jun 2025"
     },
-    { "title": "React para principiantes", "issuer": "OpenWebinars", "date": "Jul 2024" },
-    { "title": "Programación orientada a objetos con C++", "issuer": "OpenWebinars", "date": "May 2024" },
-    { "title": "C++: Introducción", "issuer": "OpenWebinars", "date": "May 2024" },
-    { "title": "WordPress: Construcción de sitios web", "issuer": "OpenWebinars", "date": "Abr 2024" }
+    {
+      "title": "React para principiantes",
+      "issuer": "OpenWebinars",
+      "date": "Jul 2024"
+    },
+    {
+      "title": "Programación orientada a objetos con C++",
+      "issuer": "OpenWebinars",
+      "date": "May 2024"
+    },
+    {
+      "title": "C++: Introducción",
+      "issuer": "OpenWebinars",
+      "date": "May 2024"
+    },
+    {
+      "title": "WordPress: Construcción de sitios web",
+      "issuer": "OpenWebinars",
+      "date": "Abr 2024"
+    }
   ],
-
   "contact": {
     "title": "Hablemos.",
     "subtitle": "¿Tienes un proyecto en mente? Estaré encantado de escucharte.",
@@ -169,7 +555,7 @@
       {
         "label": "Currículum",
         "value": "Ver CV en Google Drive",
-        "href": "#",
+        "href": "https://drive.google.com/file/d/15sq__SCY2ke7L5dCRd_LXSM3EMXt5Gfc/view?usp=drivesdk",
         "icon": "file-text"
       }
     ]

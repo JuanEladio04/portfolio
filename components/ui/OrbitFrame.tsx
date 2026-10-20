@@ -23,16 +23,26 @@ type OrbitFrameProps = {
   phase?: number;
   /** Multiplicador de velocidad, igual que u_speed del shader. */
   speed?: number;
+  /** Grosor de línea en px, igual que u_width del shader. */
+  strokeWidth?: number;
+  /** Clase de color de línea (u_color del shader). */
+  colorClassName?: string;
 };
 
-export function OrbitFrame({ className = "", phase = 0, speed = 1 }: OrbitFrameProps) {
+export function OrbitFrame({
+  className = "",
+  phase = 0,
+  speed = 1,
+  strokeWidth = 1.5,
+  colorClassName = "text-orbit",
+}: OrbitFrameProps) {
   return (
     <svg
       viewBox="-50 -50 100 100"
       fill="none"
       aria-hidden="true"
       focusable="false"
-      className={`text-orbit ${className}`}
+      className={`${colorClassName} ${className}`}
       style={{ "--orbit-phase": phase, "--orbit-speed": speed } as CSSProperties}
     >
       {shapes.map(({ sides, radius, opacity, className }) => (
@@ -40,7 +50,7 @@ export function OrbitFrame({ className = "", phase = 0, speed = 1 }: OrbitFrameP
           key={sides}
           points={polygonPoints(sides, radius)}
           stroke="currentColor"
-          strokeWidth={1.5}
+          strokeWidth={strokeWidth}
           strokeLinejoin="round"
           vectorEffect="non-scaling-stroke"
           opacity={opacity}

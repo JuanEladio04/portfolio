@@ -8,6 +8,24 @@ const paths = {
       <path d="M17 7v10H7" />
     </>
   ),
+  "arrow-left": (
+    <>
+      <path d="m12 19-7-7 7-7" />
+      <path d="M19 12H5" />
+    </>
+  ),
+  "arrow-right": (
+    <>
+      <path d="M5 12h14" />
+      <path d="m12 5 7 7-7 7" />
+    </>
+  ),
+  x: (
+    <>
+      <path d="M18 6 6 18" />
+      <path d="m6 6 12 12" />
+    </>
+  ),
   "arrow-up-right": (
     <>
       <path d="M7 7h10v10" />

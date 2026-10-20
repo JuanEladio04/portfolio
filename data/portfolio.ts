@@ -9,17 +9,29 @@ import { withBasePath } from "@/lib/site";
 
 export type NavItem = { id: string; label: string };
 
+export type ProjectLogo = {
+  src: string;
+  width: number;
+  height: number;
+  fit?: "contain" | "cover";
+  tone?: "light" | "dark";
+};
+
+export type GalleryImage = { src: string; title: string; caption: string };
+
 export type Project = {
+  slug: string;
   name: string;
+  /** Resumen corto bajo el nombre en la tarjeta. */
   tags: string[];
-  logo: {
-    src: string;
-    width: number;
-    height: number;
-    fit?: "contain" | "cover";
-    tone?: "light" | "dark";
-  };
-  href?: string;
+  /** Subtítulo del modal, p. ej. "SaaS en producción". */
+  type: string;
+  description: string;
+  stack: string[];
+  /** Enlace del botón "Visitar proyecto"; vacío para ocultarlo. */
+  url: string;
+  logo: ProjectLogo;
+  gallery: GalleryImage[];
 };
 
 export type Experience = {
@@ -91,8 +103,15 @@ export const projects: Project[] = content.projects.map((project) => {
       fit: oneOf(logo.fit, ["contain", "cover"], `${where}.logo.fit`),
       tone: oneOf(logo.tone, ["light", "dark"], `${where}.logo.tone`),
     },
+    gallery: project.gallery.map((image, i) => ({
+      ...image,
+      src: publicImage(image.src, `${where}.gallery[${i}].src`),
+    })),
   };
 });
+
+const duplicatedSlug = projects.find((p, i) => projects.findIndex((q) => q.slug === p.slug) !== i);
+if (duplicatedSlug) fail(`el slug "${duplicatedSlug.slug}" está repetido`);
 
 export const experienceIntro = content.experienceIntro;
 

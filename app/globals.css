@@ -37,6 +37,11 @@
     scroll-behavior: smooth;
   }
 
+  /* Bloquea el scroll de la página mientras hay un modal abierto. */
+  html:has(dialog[open]) {
+    overflow: hidden;
+  }
+
   body {
     @apply bg-cream font-sans text-ink antialiased;
   }

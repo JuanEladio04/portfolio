@@ -1,6 +1,6 @@
 import { projects, projectsIntro, sections } from "@/data/portfolio";
 import { SectionHeader } from "@/components/ui/SectionHeader";
-import { ProjectCard } from "./ProjectCard";
+import { ProjectsGrid } from "@/components/projects/ProjectsGrid";
 
 export function Projects() {
   const { id, label } = sections.projects;
@@ -13,13 +13,7 @@ export function Projects() {
           <p className="max-w-[420px] text-base leading-[26px] text-stone">{projectsIntro}</p>
         </div>
 
-        <ul className="grid grid-cols-[repeat(auto-fill,minmax(240px,1fr))] gap-x-8 gap-y-[72px] justify-items-center sm:justify-items-start xl:grid-cols-4 xl:justify-between">
-          {projects.map((project, i) => (
-            <li key={project.name}>
-              <ProjectCard project={project} phase={i * 0.9} />
-            </li>
-          ))}
-        </ul>
+        <ProjectsGrid projects={projects} />
       </div>
     </section>
   );
