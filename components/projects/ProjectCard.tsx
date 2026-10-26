@@ -26,7 +26,7 @@ export function ProjectCard({ project, onOpen, phase = 0 }: ProjectCardProps) {
         </div>
       </div>
 
-      <div className="flex flex-col gap-2">
+      <div className="flex flex-col gap-2 items-center">
         <Icon name="mouse-pointer-click" size={20} className="text-gold-light" />
         <h3 className="font-display text-[22px] font-medium text-cream">
           {/* El ::after extiende el área clicable a toda la tarjeta. */}

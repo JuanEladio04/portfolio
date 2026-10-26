@@ -8,11 +8,16 @@ export function Navbar() {
         aria-label="Principal"
         className="container-page flex items-center justify-between py-7"
       >
-        <a href="#" className="flex items-center gap-3 font-display text-sm text-ink">
+        <a
+          href="#"
+          className="flex items-center gap-3 font-display text-sm text-ink"
+        >
           <span className="flex size-9 items-center justify-center font-semibold tracking-[1px] ring-[1.5px] ring-inset ring-ink">
             {profile.initials}
           </span>
-          <span className="font-medium tracking-[3px] uppercase">{profile.shortName}</span>
+          <span className="font-medium tracking-[3px] uppercase">
+            {profile.shortName}
+          </span>
         </a>
 
         <div className="flex items-center gap-10">
@@ -23,7 +28,7 @@ export function Navbar() {
                   href={`#${item.id}`}
                   className="text-[13px] font-medium tracking-[0.5px] text-ink transition-colors hover:text-gold"
                 >
-                  {String(i + 1).padStart(2, "0")} {item.label}
+                  {item.label}
                 </a>
               </li>
             ))}
