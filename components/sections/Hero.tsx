@@ -1,6 +1,6 @@
+import Image from "next/image";
 import { profile, sections } from "@/data/portfolio";
 import { ButtonLink } from "@/components/ui/Button";
-import { Icon } from "@/components/ui/Icon";
 import { OrbitFrame } from "@/components/ui/OrbitFrame";
 
 export function Hero() {
@@ -61,11 +61,15 @@ function PhotoComposition() {
         className="pointer-events-none absolute -top-20 -left-[130px] size-[760px] opacity-60"
       />
       <div className="absolute top-0 left-14 h-[540px] w-[440px] ring-[1.5px] ring-inset ring-gold" />
-      {/* TODO: sustituir el placeholder por la foto con next/image */}
-      <div className="absolute top-9 left-5 flex h-[540px] w-[440px] flex-col items-center justify-center gap-2.5 bg-line motion-safe:animate-bob">
-        <Icon name="user-round" size={56} strokeWidth={1.5} className="text-muted" />
-        <span className="text-[13px] tracking-[1px] text-muted">Tu foto aquí</span>
-      </div>
+      <Image
+        src={profile.photo}
+        alt={`Foto de ${profile.fullName}`}
+        width={440}
+        height={540}
+        sizes="440px"
+        fetchPriority="high"
+        className="absolute top-9 left-5 h-[540px] w-[440px] bg-line object-cover motion-safe:animate-bob"
+      />
       <div className="absolute top-6 left-[452px] size-7 bg-gold" />
       <div className="absolute top-[500px] left-0 flex h-[100px] w-[120px] flex-col justify-center gap-1 bg-ink px-5">
         <span className="text-[10px] font-semibold tracking-[2.5px] text-stone">DESDE</span>

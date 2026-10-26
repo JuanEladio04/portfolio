@@ -9,6 +9,7 @@
     "country": "España",
     "since": 2022,
     "cvUrl": "https://drive.google.com/file/d/15sq__SCY2ke7L5dCRd_LXSM3EMXt5Gfc/view?usp=drivesdk",
+    "photo": "/images/profile/hero.webp",
     "intro": "Desarrollador Fullstack especializado en backend PHP/Laravel y arquitecturas cloud. Construyo soluciones escalables de principio a fin: de React y Next.js a infraestructura en GCP con Docker."
   },
   "about": {

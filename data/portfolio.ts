@@ -70,6 +70,7 @@ function oneOf<T extends string>(value: string | undefined, options: readonly T[
 export const profile = {
   ...content.profile,
   fullName: `${content.profile.firstName} ${content.profile.lastName}`,
+  photo: publicImage(content.profile.photo, "profile.photo"),
 };
 
 export const sections = {
