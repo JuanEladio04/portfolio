@@ -12,7 +12,7 @@
     "intro": "Desarrollador Fullstack especializado en backend PHP/Laravel y arquitecturas cloud. Construyo soluciones escalables de principio a fin: de React y Next.js a infraestructura en GCP con Docker."
   },
   "about": {
-    "quote": "¿Desarrollador? ¿DevOps? ¿Técnico? Al final, las etiquetas son lo de menos. Lo que me define es la curiosidad por entender cómo funciona el mundo bit a bit.",
+    "quote": "¿Desarrollador? ¿DevOps? ¿Técnico? Al final, las etiquetas son lo de menos. Lo que me define es la curiosidad por entender cómo funciona el mundo bit a bit y la capacidad de perderme entre algoritmos para encontrar la solución más elegante.",
     "quoteTail": "Construyo tecnología porque es el único lugar donde la lógica y la creatividad hablan el mismo idioma.",
     "description": "Desarrollador Fullstack con especialización en backend PHP/Laravel y experiencia en arquitecturas cloud, automatización e integraciones API. Cuento con proyectos propios SaaS en producción desarrollados junto a mi socio en Nebula Systems.",
     "facts": [
@@ -29,17 +29,41 @@
         "value": "Backend & Cloud"
       }
     ],
-    "stack": ["PHP", "Laravel", "Node.js", "NestJS", "Express.js", "TypeScript", "React", "Next.js", "Angular", "SQL", "Docker", "GCP", "n8n"]
+    "stack": [
+      "PHP",
+      "Laravel",
+      "Node.js",
+      "NestJS",
+      "Express.js",
+      "TypeScript",
+      "React",
+      "Next.js",
+      "Angular",
+      "SQL",
+      "Docker",
+      "GCP",
+      "n8n"
+    ]
   },
   "projectsIntro": "Desde proyectos académicos hasta plataformas SaaS en producción. Selecciona uno para ver el detalle.",
   "projects": [
     {
       "slug": "csi-restaurant",
-      "name": "CSI Restaurant",
-      "tags": ["Reservas", "Carta online"],
-      "type": "",
-      "description": "",
-      "stack": [],
+      "name": "Ristaurante Luna della Rosa",
+      "tags": [
+        "Reservas",
+        "Carta online"
+      ],
+      "type": "Proyecto académico en equipo",
+      "description": "Ristaurante Luna della Rosa fue mi primer proyecto funcional desarrollado en equipo dentro de un entorno académico. Diseñado por fases, el objetivo principal fue poner en práctica por primera vez la maquetación web responsiva, la interacción dinámica con bases de datos dinámicas y la integración de lógica interactiva en el cliente y servidor.",
+      "stack": [
+        "PHP",
+        "JavaScript (ES6+)",
+        "HTML5",
+        "SCSS",
+        "Bootstrap",
+        "MySQL"
+      ],
       "url": "",
       "logo": {
         "src": "/images/projects/csi-restaurant/logo.webp",
@@ -50,37 +74,50 @@
         {
           "src": "/images/projects/csi-restaurant/index.webp",
           "title": "Index",
-          "caption": ""
+          "caption": "Presenta una ilustración temática de un restaurante italiano sobre la que destaca el logotipo central de Luna della Rosa. Incluye accesos directos a redes sociales (Instagram, X, Facebook) integrados en la arquitectura clásica de la fachada."
         },
         {
           "src": "/images/projects/csi-restaurant/card.webp",
-          "title": "Card",
-          "caption": ""
+          "title": "Carta",
+          "caption": "Una carta sencilla cargada directamente desde una base de datos. Aquí pusimos en practica conocimientos desarrollados en otras asignaturas como puede ser crear conexiones a una base de datos, cargar su contenido de manera dinámica, etc."
         },
         {
           "src": "/images/projects/csi-restaurant/pizzaoid.webp",
-          "title": "Pizzaoid",
-          "caption": ""
+          "title": "Pizzanoid (Minijuego)",
+          "caption": "Este minijuego desentona con el resto del proyecto, pero fue una tarea que nos asignó el profesor . Disfrute mucho desarrollándolo. Intente que al menos la temática cuadrase un poco con la temática de la web. Consiste en un minijuego estilo Breakout, muy simple, pero me ayudó mucho a mejorar con mi algoritmia."
         },
         {
           "src": "/images/projects/csi-restaurant/profile.webp",
-          "title": "Profile",
-          "caption": ""
+          "title": "Perfil",
+          "caption": "Panel de usuario sencillo e intuitivo para la edición de información personal y actualización de la foto de perfil."
         },
         {
           "src": "/images/projects/csi-restaurant/reservations.webp",
-          "title": "Reservations",
-          "caption": ""
+          "title": "Reservar mesa",
+          "caption": "Un sistema de reservas funcional. Es quizás lo mas complejo del proyecto. En aquel momento en el que estabamos comenzando a programar de una forma más orientada a web recuerdo que tuvimos algún problema creandolo. Nada que no pudiesemos crear con un poco de trabajo en equipo y tiempo."
         }
       ]
     },
     {
       "slug": "plannerly",
       "name": "Plannerly",
-      "tags": ["Tareas", "Notas", "Workspaces"],
-      "type": "",
-      "description": "",
-      "stack": [],
+      "tags": [
+        "Tareas",
+        "Notas",
+        "Workspaces"
+      ],
+      "type": "Proyecto académico",
+      "description": "Plannerly representó un hito clave en mi evolución técnica al ser mi primer proyecto estructurado bajo una arquitectura desacoplada, separando completamente el Backend y el Frontend en repositorios independientes. La plataforma está concebida como un organizador personal de tareas, notas y recordatorios. En este proyecto me enfoqué profundamente en la solidez de la arquitectura, la lógica de negocio y el consumo de APIs REST, al mismo tiempo que comencé a experimentar con maquetaciones e interfaces de usuario más complejas en el cliente.",
+      "stack": [
+        "HTML5",
+        "SCSS",
+        "Bootstrap",
+        "MySQL",
+        "Java",
+        "Spring Boot",
+        "TypeScript",
+        "Angular"
+      ],
       "url": "",
       "logo": {
         "src": "/images/projects/plannerly/logo.webp",
@@ -89,28 +126,28 @@
       },
       "gallery": [
         {
+          "src": "/images/projects/plannerly/workspace-creation.webp",
+          "title": "Crear espacio de trabajo",
+          "caption": "Para poder empezar a usar las diferentes funciones de la aplicación, primero necesitas un espacio de trabajo donde se almacenarán las diferentes tareas, notas o recordatorios."
+        },
+        {
+          "src": "/images/projects/plannerly/share-workspace.webp",
+          "title": "Compartir espacio de trabajo",
+          "caption": "El espacio de trabajo puede ser compartido por varios usuarios. Esto se hace por un sistema de invitaciones usando el correo electrónico"
+        },
+        {
+          "src": "/images/projects/plannerly/task-manager.webp",
+          "title": "Gestor de tareas",
+          "caption": ""
+        },
+        {
           "src": "/images/projects/plannerly/notes-manager.webp",
-          "title": "Notes manager",
+          "title": "Gestor de notas",
           "caption": ""
         },
         {
           "src": "/images/projects/plannerly/reminders-manager.webp",
-          "title": "Reminders manager",
-          "caption": ""
-        },
-        {
-          "src": "/images/projects/plannerly/share-workspace.webp",
-          "title": "Share workspace",
-          "caption": ""
-        },
-        {
-          "src": "/images/projects/plannerly/task-manager.webp",
-          "title": "Task manager",
-          "caption": ""
-        },
-        {
-          "src": "/images/projects/plannerly/workspace-creation.webp",
-          "title": "Workspace creation",
+          "title": "Gestor de recordatorios",
           "caption": ""
         }
       ]
@@ -118,10 +155,22 @@
     {
       "slug": "atlas-music-festival",
       "name": "Atlas Music Festival",
-      "tags": ["Entradas", "Artistas"],
-      "type": "",
-      "description": "",
-      "stack": [],
+      "tags": [
+        "Entradas",
+        "Artistas"
+      ],
+      "type": "Proyecto académico",
+      "description": "Atlas Music Festival es una aplicación web integral enfocada en la gestión y venta de entradas para un festival de música. La plataforma no solo permite a los asistentes adquirir sus tickets, sino que además ofrece un portal interactivo donde los artistas pueden publicar su discografía oficial y compartir artículos o novedades para que los usuarios los lean y se mantengan al tanto del evento.",
+      "stack": [
+        "HTML5",
+        "SCSS",
+        "MySQL",
+        "PHP",
+        "Laravel",
+        "Laravel Breeze",
+        "Eloquent",
+        "Tailwind"
+      ],
       "url": "",
       "logo": {
         "src": "/images/projects/atlas-music-festival/logo.webp",
@@ -138,48 +187,60 @@
         },
         {
           "src": "/images/projects/atlas-music-festival/admin_user-gestion.webp",
-          "title": "Admin · user gestion",
-          "caption": ""
+          "title": "Gestión de usuarios",
+          "caption": "Panel de administración en tabla interactiva para gestionar usuarios, roles, pases y operaciones CRUD."
         },
         {
           "src": "/images/projects/atlas-music-festival/buy-pass.webp",
-          "title": "Buy pass",
-          "caption": ""
+          "title": "Comprar pase",
+          "caption": "Catálogo de pases e historial de tickets disponibles para la adquisición directa de entradas por parte de los asistentes."
         },
         {
           "src": "/images/projects/atlas-music-festival/singer-profile_posts.webp",
-          "title": "Singer profile · posts",
-          "caption": ""
+          "title": "Perfil del cantante · Publicaciones",
+          "caption": "Vista pública del perfil del artista mostrando sus artículos, imágenes e historias publicadas para sus fans."
         },
         {
           "src": "/images/projects/atlas-music-festival/singer-profile_songs.webp",
-          "title": "Singer profile · songs",
-          "caption": ""
+          "title": "Perfil del cantante · Canciones",
+          "caption": "Módulo del perfil de artista enfocado en mostrar su discografía, listas de canciones, géneros y duración."
         },
         {
           "src": "/images/projects/atlas-music-festival/singer_post-creation.webp",
-          "title": "Singer · post creation",
-          "caption": ""
+          "title": "Perfil del cantante · Crear post",
+          "caption": "Formulario para que el artista cree y publique nuevos artículos o novedades en la plataforma."
         },
         {
           "src": "/images/projects/atlas-music-festival/singer_song-creation.webp",
-          "title": "Singer · song creation",
-          "caption": ""
+          "title": "Perfil del cantante · Crear canciones",
+          "caption": "Formulario para subir y registrar nuevos temas en el catálogo musical del festival con portada y metadatos."
         },
         {
           "src": "/images/projects/atlas-music-festival/singers.webp",
-          "title": "Singers",
-          "caption": ""
+          "title": "Cantantes",
+          "caption": "Rejilla visual interactiva con el cartel y catálogo completo de artistas participantes en el festival."
         }
       ]
     },
     {
       "slug": "serv-o",
-      "name": "Serv-O",
-      "tags": ["Gestión de servidores"],
-      "type": "",
-      "description": "",
-      "stack": [],
+      "name": "Serv Ω",
+      "tags": [
+        "Gestión de servidores"
+      ],
+      "type": "Trabajo de Fin de Grado",
+      "description": "Serv Ω es una plataforma centralizada para la gestión y monitorización de servidores y servicios estructurada mediante espacios de trabajo compartidos (workspaces). Desarrollada como mi Trabajo de Fin de Grado (TFG), representa el proyecto más complejo y ambicioso de mi etapa académica.\n\nLa herramienta permite a los equipos de infraestructura supervisar el estado de los servidores en tiempo real y ejecutar comandos de forma remota, segura y simplificada mediante selecciones predefinidas y parametrizadas por los administradores.",
+      "stack": [
+        "HTML5",
+        "SCSS",
+        "MySQL",
+        "PHP",
+        "Laravel",
+        "Laravel Breeze",
+        "Eloquent",
+        "Tailwind",
+        "WebSocket"
+      ],
       "url": "",
       "logo": {
         "src": "/images/projects/serv-o/logo.webp",
@@ -190,62 +251,80 @@
         {
           "src": "/images/projects/serv-o/index.webp",
           "title": "Index",
-          "caption": ""
+          "caption": "Landing page de presentación del proyecto con la sección «Sobre nosotros» y los valores fundamentales de la plataforma."
         },
         {
           "src": "/images/projects/serv-o/login.webp",
-          "title": "Login",
-          "caption": ""
+          "title": "Iniciar sesión",
+          "caption": "Pantalla de autenticación limpia con soporte para inicio de sesión estándar y mediante Google (OAuth)."
         },
         {
           "src": "/images/projects/serv-o/profile.webp",
-          "title": "Profile",
-          "caption": ""
+          "title": "Perfil",
+          "caption": "Panel para la edición de datos personales del usuario, verificación de correo electrónico y actualización de contraseña."
         },
         {
           "src": "/images/projects/serv-o/server_commands.webp",
-          "title": "Server · commands",
-          "caption": ""
+          "title": "Servidor · Consola",
+          "caption": "Interfaz de consola interactiva para la ejecución remota de comandos de sistema (p. ej. `systemctl status apache2`) y salida."
         },
         {
           "src": "/images/projects/serv-o/server_resources.webp",
-          "title": "Server · resources",
-          "caption": ""
+          "title": "Servidor · Recursos",
+          "caption": "Módulo de monitorización en tiempo real que muestra el porcentaje de uso de CPU y memoria RAM del servidor."
         },
         {
           "src": "/images/projects/serv-o/services-commands.webp",
-          "title": "Services commands",
-          "caption": ""
+          "title": "Servicios · Gestión de comandos",
+          "caption": "Tabla de administración para registrar, editar y parametrizar los comandos predefinidos asociados a cada servicio."
         },
         {
           "src": "/images/projects/serv-o/services-gestion.webp",
-          "title": "Services gestion",
-          "caption": ""
+          "title": "Gestión de servicios",
+          "caption": "Panel centralizado que lista los servicios configurados en la plataforma (FTP, Supervisor, SSH, Apache2, etc.)."
         },
         {
           "src": "/images/projects/serv-o/user-gestion.webp",
-          "title": "User gestion",
-          "caption": ""
+          "title": "Gestión de usuarios",
+          "caption": "Vista de administración para gestionar la lista de usuarios, sus datos de contacto y sus roles de acceso al sistema."
         },
         {
           "src": "/images/projects/serv-o/workspace.webp",
-          "title": "Workspace",
-          "caption": ""
+          "title": "Espacio de trabajo",
+          "caption": "Dashboard de un workspace específico que recopila los servidores vinculados y opciones de gestión de equipo."
         },
         {
           "src": "/images/projects/serv-o/workspace-creation.webp",
-          "title": "Workspace creation",
-          "caption": ""
+          "title": "Creación de espacio de trabajo",
+          "caption": "Formulario para dar de alta nuevos espacios de trabajo compartidos asignando nombre y descripción."
         }
       ]
     },
     {
       "slug": "nebula",
-      "name": "Nebula",
-      "tags": ["Clientes", "Pedidos", "Portfolio"],
-      "type": "",
-      "description": "",
-      "stack": [],
+      "name": "Nebula Systems Web",
+      "tags": [
+        "Clientes",
+        "Pedidos",
+        "Portfolio"
+      ],
+      "type": "Plataforma propia · Nebula Systems",
+      "description": "Nebula Systems Web es el proyecto más complejo que hemos desarrollado hasta ahora. Consiste en un servidor de Laravel con una interfaz desarrollada en Inertia que se encarga de gestionar el servicio que da a otras apps desarrolladas en NextJS. Con este se brindan datos a una Landing además de a una app para usuarios. Este cuenta con funciones como pueden ser, gestion de ordenes de reparación, proyectos de desarrollo, control de horarios, gestion de esquemas de base de datos, pizarras, chats privados p2p, gestion dinaminá de portfolio, etc.",
+      "stack": [
+        "HTML5",
+        "SCSS",
+        "MySQL",
+        "PHP",
+        "Laravel",
+        "Laravel Breeze",
+        "Eloquent",
+        "Tailwind",
+        "WebSocket",
+        "Inertia",
+        "Next.js",
+        "TypeScript",
+        "React"
+      ],
       "url": "",
       "logo": {
         "src": "/images/projects/nebula/logo.webp",
@@ -256,83 +335,96 @@
       "gallery": [
         {
           "src": "/images/projects/nebula/public_index.webp",
-          "title": "Public · index",
-          "caption": ""
-        },
-        {
-          "src": "/images/projects/nebula/clients_contact.webp",
-          "title": "Clients · contact",
-          "caption": ""
-        },
-        {
-          "src": "/images/projects/nebula/clients_orders.webp",
-          "title": "Clients · orders",
-          "caption": ""
-        },
-        {
-          "src": "/images/projects/nebula/clients_projects.webp",
-          "title": "Clients · projects",
-          "caption": ""
+          "title": "Index",
+          "caption": "Landing principal del proyecto con navegación mediante scroll animado en un fondo galáctico e interfaz interactiva donde el menú despliega progresivamente sus opciones hasta la vista general."
         },
         {
           "src": "/images/projects/nebula/public_portfolio.webp",
-          "title": "Public · portfolio",
-          "caption": ""
+          "title": "Portfolio",
+          "caption": "Módulo de trabajos destacados en cuadrícula responsiva, mostrando proyectos creados con las tecnologías utilizadas en cada uno."
         },
         {
           "src": "/images/projects/nebula/public_sales-funnel.webp",
-          "title": "Public · sales funnel",
-          "caption": ""
+          "title": "Embudo de ventas",
+          "caption": "Flujo interactivo paso a paso diseñado para cualificar prospectos, solicitar datos del proyecto y agendar consultas directas."
         },
         {
-          "src": "/images/projects/nebula/server_availability-gestion.webp",
-          "title": "Server · availability gestion",
-          "caption": ""
+          "src": "/images/projects/nebula/clients_contact.webp",
+          "title": "Cliente · Soporte técnico",
+          "caption": "Portal de atención para clientes enfocado en la resolución de incidencias, contacto directo y soporte rápido."
         },
         {
-          "src": "/images/projects/nebula/server_channels-gestion.webp",
-          "title": "Server · channels gestion",
-          "caption": ""
+          "src": "/images/projects/nebula/clients_orders.webp",
+          "title": "Cliente · Mis ordenes",
+          "caption": "Panel para usuarios cliente que permite consultar el estado actual, presupuesto y seguimiento de sus órdenes de reparación o servicios."
         },
         {
-          "src": "/images/projects/nebula/server_diagrams-integration.webp",
-          "title": "Server · diagrams integration",
-          "caption": ""
+          "src": "/images/projects/nebula/clients_projects.webp",
+          "title": "Cliente · Mis proyectos",
+          "caption": "Vista para que el cliente siga el progreso, entregables y fases de desarrollo de los proyectos contratados."
         },
         {
           "src": "/images/projects/nebula/server_home.webp",
-          "title": "Server · home",
-          "caption": ""
+          "title": "Server · Home",
+          "caption": "Dashboard central con métricas de actividad semanal, registro de jornada laboral (control de tiempo) y acceso rápido a módulos."
+        },
+        {
+          "src": "/images/projects/nebula/server_availability-gestion.webp",
+          "title": "Server · Gestión de disponibilidad",
+          "caption": "Vista de calendario para gestionar la agenda de consultas, franjas disponibles y reservas de tiempo para reuniones."
+        },
+        {
+          "src": "/images/projects/nebula/server_channels-gestion.webp",
+          "title": "Server · Gestión de canales",
+          "caption": "Espacio colaborativo centralizado que integra pizarras dinámicas, chats privados entre equipo/admins y gestión de issues."
+        },
+        {
+          "src": "/images/projects/nebula/server_diagrams-integration.webp",
+          "title": "Server · Diagramas",
+          "caption": "Herramienta visual integrada para el diseño, modelado y documentación de esquemas y relaciones de bases de datos."
         },
         {
           "src": "/images/projects/nebula/server_order-gestion.webp",
-          "title": "Server · order gestion",
-          "caption": ""
+          "title": "Server · Gestión de órdenes",
+          "caption": "Módulo completo para administrar solicitudes de reparación, filtros por estado (en proceso, completada) y gestión de pagos."
         },
         {
           "src": "/images/projects/nebula/server_portfolio-gestion.webp",
-          "title": "Server · portfolio gestion",
-          "caption": ""
+          "title": "Server · Gestión del portfolio",
+          "caption": "Panel dinámico CRUD para publicar, editar, ocultar o guardar como borradores los proyectos exhibidos en la web pública."
         },
         {
           "src": "/images/projects/nebula/server_projects-gestion.webp",
-          "title": "Server · projects gestion",
-          "caption": ""
+          "title": "Server · Gestión de Proyectos",
+          "caption": "Tabla de control para el seguimiento global de proyectos, asignación de presupuestos, clientes y stacks tecnológicos."
         },
         {
           "src": "/images/projects/nebula/server_promo-gestion.webp",
-          "title": "Server · promo gestion",
-          "caption": ""
+          "title": "Server · Gestión de promociones",
+          "caption": "Panel de administración de ofertas comerciales, control de fechas de caducidad y configuración de planes activos."
         }
       ]
     },
     {
       "slug": "orbity",
-      "name": "Orbity",
-      "tags": ["SaaS", "PDFs", "Correo temporal"],
+      "name": "Orbity Cloud",
+      "tags": [
+        "SaaS",
+        "PDFs",
+        "Correo temporal"
+      ],
       "type": "SaaS en producción",
-      "description": "Plataforma SaaS multifunción que reúne herramientas web centradas en la privacidad: gestión de PDFs, correos temporales y utilidades online. Sin cuentas y sin rastreo. Construida con una arquitectura de microservicios en Next.js, React y Express.js, desplegada con Docker sobre GCP.",
-      "stack": ["Next.js", "React", "Express.js", "Docker", "GCP"],
+      "description": "Orbity Cloud es una plataforma web modular diseñada como una suite de herramientas digitales de alta utilidad para el usuario. Construida bajo una arquitectura de microservicios, la suite ofrece soluciones eficientes como un gestor de correos temporales e instrumentos de procesamiento y manipulación de archivos PDF. Además, la plataforma incorpora un blog optimizado para posicionamiento SEO, garantizando una excelente visibilidad orgánica y una estructura preparada para la integración continua de nuevos microservicios.",
+      "stack": [
+        "HTML5",
+        "CSS",
+        "MySQL",
+        "Tailwind",
+        "Express.js",
+        "React",
+        "Next.js",
+        "TypeScript"
+      ],
       "url": "",
       "logo": {
         "src": "/images/projects/orbity/logo.webp",
@@ -344,32 +436,32 @@
       "gallery": [
         {
           "src": "/images/projects/orbity/landing_index.webp",
-          "title": "Landing · Inicio",
+          "title": "Landing · Index",
           "caption": "Presentación de la suite: herramientas web centradas en la privacidad, sin cuentas ni rastreo."
         },
         {
           "src": "/images/projects/orbity/landing_blog.webp",
           "title": "Landing · Blog",
-          "caption": ""
+          "caption": "Portal de artículos y guías optimizado para SEO, diseñado para posicionar palabras clave estratégicas sobre seguridad, privacidad y herramientas digitales."
         },
         {
           "src": "/images/projects/orbity/mail_dashboard.webp",
-          "title": "Orbity Mail · Panel",
-          "caption": ""
+          "title": "Correos temporales",
+          "caption": "Panel del servicio Orbity Mail para gestionar múltiples direcciones de correo efímeras simultáneamente, con contador de expiración y bandeja de entrada en tiempo real."
         },
         {
           "src": "/images/projects/orbity/pdf_menu.webp",
-          "title": "Orbity PDF · Menú",
+          "title": "PDF · Menú",
+          "caption": "Catálogo modular de utilidades para documentos PDF (comprimir, unir, dividir, convertir, proteger y editar sin necesidad de registro)."
+        },
+        {
+          "src": "/images/projects/orbity/pdf_sing-pdf.webp",
+          "title": "PDF · Firmar PDF",
           "caption": ""
         },
         {
           "src": "/images/projects/orbity/pdf_html-2-pdf.webp",
-          "title": "Orbity PDF · HTML a PDF",
-          "caption": ""
-        },
-        {
-          "src": "/images/projects/orbity/pdf_sing-pdf.webp",
-          "title": "Orbity PDF · Firmar PDF",
+          "title": "PDF · HTML a PDF",
           "caption": ""
         }
       ]
@@ -377,10 +469,22 @@
     {
       "slug": "verios",
       "name": "Verios",
-      "tags": ["Landing", "Web"],
-      "type": "",
-      "description": "",
-      "stack": [],
+      "tags": [
+        "Landing",
+        "Web"
+      ],
+      "type": "SaaS en fase de validación",
+      "description": "Verios es una plataforma SaaS orientada a optimizar el control de presencia y la gestión de tiempo en empresas. El sistema permite a los empleados registrar sus entradas y salidas de forma sencilla, al mismo tiempo que ofrece a los administradores herramientas avanzadas para la gestión de horas extra, solicitudes de vacaciones, tramitación de bajas y días libres. Concebido con una arquitectura modular y escalable, el proyecto está preparado para integrarse como módulo especializado dentro de un ecosistema CRM global. Actualmente se encuentra en fase de validación.",
+      "stack": [
+        "HTML5",
+        "CSS",
+        "MySQL",
+        "Tailwind",
+        "NestJS",
+        "React",
+        "Next.js",
+        "TypeScript"
+      ],
       "url": "",
       "logo": {
         "src": "/images/projects/verios/logo.webp",
@@ -390,18 +494,44 @@
       "gallery": [
         {
           "src": "/images/projects/verios/landing_index.webp",
-          "title": "Landing · index",
+          "title": "Index",
           "caption": ""
         }
       ]
     },
     {
       "slug": "forvia",
-      "name": "Forvia",
-      "tags": ["Fitness", "Nutrición", "Social"],
-      "type": "",
-      "description": "",
-      "stack": [],
+      "name": "Forvia Fit",
+      "tags": [
+        "Fitness",
+        "Nutrición",
+        "Social"
+      ],
+      "type": "Alpha privada",
+      "description": "Forvia Fit es una app que se encarga de monitorear tus ejercicios y nutrición de forma centralizada. Nace como evolución de openGym y se ha convertido en una plataforma propia con una arquitectura de microservicios: un servicio *core* en NodeJS (autenticación, sesiones, sincronización de rutinas, peso y diario nutricional) y un segundo servicio con la lógica propia de Forvia (niveles, XP y prestigio, rachas, anti-trampas, tareas diarias, feed social y sistema de coaches y boxes), ambos sobre PostgreSQL y comunicados mediante una API interna. El frontend es una PWA en React servida por Nginx, empaquetada también como app Android con Capacitor, y todo se despliega con Docker Compose e imágenes publicadas desde GitHub Actions. Incluye una biblioteca de más de 1.300 ejercicios con demostraciones animadas, entrenamientos guiados con reglas de progresión automática, mapa muscular de balance, fatiga y fuerza, control de macros, agua y ayuno, mini-juegos para los descansos y una landing propia en React + Vite.",
+      "stack": [
+        "HTML5",
+        "CSS",
+        "JavaScript",
+        "React",
+        "Vite",
+        "React Router",
+        "Zustand",
+        "Motion",
+        "Lexical",
+        "Tesseract.js",
+        "Node.js",
+        "PostgreSQL",
+        "WebSocket",
+        "Stripe",
+        "Web Push",
+        "Capacitor",
+        "Android",
+        "Nginx",
+        "Docker",
+        "GitHub Actions",
+        "Vitest"
+      ],
       "url": "",
       "logo": {
         "src": "/images/projects/forvia/logo.webp",
@@ -410,59 +540,59 @@
       },
       "gallery": [
         {
-          "src": "/images/projects/forvia/dashboard.webp",
-          "title": "Dashboard",
-          "caption": ""
+          "src": "/images/projects/forvia/landing_index.webp",
+          "title": "Index",
+          "caption": "Landing pública de la alpha privada con el claim principal, acceso directo a la app, solicitud de plaza en la alpha y mockups de las pantallas del producto."
         },
         {
-          "src": "/images/projects/forvia/landing_index.webp",
-          "title": "Landing · index",
-          "caption": ""
+          "src": "/images/projects/forvia/dashboard.webp",
+          "title": "Dashboard principal",
+          "caption": "Inicio del usuario con su nivel y prestigio, calendario semanal, tareas diarias que otorgan XP, resumen de calorías y macros, métricas de la semana, evolución del peso corporal y balance muscular."
         },
         {
           "src": "/images/projects/forvia/coach-selector.webp",
-          "title": "Coach selector",
-          "caption": ""
+          "title": "Selector de coaches",
+          "caption": "Buscador de entrenadores personales por ciudad, con su ubicación, tarifa por hora y solicitud directa de coaching."
         },
         {
           "src": "/images/projects/forvia/nutrition-control.webp",
-          "title": "Nutrition control",
-          "caption": ""
+          "title": "Control de nutrición",
+          "caption": "Diario nutricional del día con progreso de calorías y macros, registro de agua, temporizador de ayuno y comidas desglosadas por desayuno, almuerzo, etc."
         },
         {
           "src": "/images/projects/forvia/nutrition-goals.webp",
-          "title": "Nutrition goals",
+          "title": "Objetivos de nutrición",
           "caption": ""
         },
         {
           "src": "/images/projects/forvia/progress-panel.webp",
-          "title": "Progress panel",
-          "caption": ""
+          "title": "Panel de progresos",
+          "caption": "Estadísticas de entrenamiento con un heatmap anual de actividad, mapa muscular interactivo en modos balance, fatiga y fuerza, y análisis del esfuerzo por serie (RIR)."
         },
         {
           "src": "/images/projects/forvia/rest-minigames.webp",
-          "title": "Rest minigames",
-          "caption": ""
+          "title": "Mini-juegos para descansar",
+          "caption": "Colección de mini-juegos ligeros (Snake, 2048, Memory, Whac-a-mole, etc.) para amenizar los descansos entre series."
         },
         {
           "src": "/images/projects/forvia/settings.webp",
-          "title": "Settings",
-          "caption": ""
+          "title": "Ajustes",
+          "caption": "Centro de configuración organizado por bloques: cuenta, suscripción, perfil, nivel y prestigio, alta como coach, preferencias de entrenamiento, objetivos nutricionales, apariencia, notificaciones y datos."
         },
         {
           "src": "/images/projects/forvia/social-feed.webp",
-          "title": "Social feed",
-          "caption": ""
+          "title": "Feed social",
+          "caption": "Feed con los entrenamientos publicados por la comunidad, mostrando ejercicios, series, duración y volumen total, con likes y comentarios."
         },
         {
           "src": "/images/projects/forvia/workout-menu.webp",
-          "title": "Workout menu",
-          "caption": ""
+          "title": "Menú de rutinas",
+          "caption": "Listado de rutinas del usuario para editarlas, eliminarlas o iniciarlas, además de la opción de entrenamiento libre o crear una rutina nueva."
         },
         {
           "src": "/images/projects/forvia/workout-training.webp",
-          "title": "Workout training",
-          "caption": ""
+          "title": "Rutina",
+          "caption": "Sesión guiada en curso con tiempo, volumen y series completadas, valores de la sesión anterior, peso sugerido por la regla de progresión, descanso por ejercicio y registro de esfuerzo (RIR)."
         }
       ]
     }
